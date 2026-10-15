@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ditt Namn</title>
+    <!-- Länk till stilmallen (ligger i mappen style) -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER MED NAVBAR ===== -->
+    <header class="header">
+        <nav class="nav">
+            <!-- Logga / namn -->
+            <a href="index.html" class="logo">Robin Lindstrand</a>
+
+            <!-- Hamburgarmeny: osynlig checkbox + label som visas som ☰ i mobilvy -->
+            <input type="checkbox" id="meny-toggle" class="meny-toggle">
+            <label for="meny-toggle" class="hamburgare">&#9776;</label>
+
+            <!-- Länkarna -->
+            <ul class="nav-lankar">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="#projekt">Projekt</a></li>
+                <li><a href="om.html">Om mig</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO-SEKTION ===== -->
+        <section class="hero">
+
+            <!-- Liten text uppe till vänster -->
+            <p class="hero-liten">
+                <span>Java-utvecklare</span>
+                <span>under utbildning</span>
+            </p>
+
+            <!-- Bild med pluppar (hotspots) -->
+            <figure class="hero-bild">
+                <img src="images/berg.png" alt="Ett kosmiskt berg som svävar">
+
+                <!-- Pluppar: varje plupp länkar till ett projekt och har en dold infotext -->
+                <a href="projekt1.html" class="plupp plupp-1">
+                    <span class="plupp-plus">+</span>
+                    <span class="plupp-info">Projekt 1</span>
+                </a>
+                <a href="projekt2.html" class="plupp plupp-2">
+                    <span class="plupp-plus">+</span>
+                    <span class="plupp-info">Projekt 2</span>
+                </a>
+                <a href="projekt3.html" class="plupp plupp-3">
+                    <span class="plupp-plus">+</span>
+                    <span class="plupp-info">Projekt 3</span>
+                </a>
+            </figure>
+
+            <!-- Stor rubrik -->
+            <h1 class="hero-rubrik">Reaching new peaks</h1>
+
+            <!-- Ingress nere till höger -->
+            <p class="hero-ingress">
+                Här samlar jag mina projekt från utbildningen och framåt.
+                Klicka på topparna för att utforska.
+            </p>
+        </section>
+
+        <!-- ===== GALLERI MED PROJEKT ===== -->
+        <section class="galleri-sektion" id="projekt">
+            <h2>Mina projekt</h2>
+
+            <div class="galleri">
+                <!-- Projektkort 1 -->
+                <article class="kort">
+                    <a href="projekt1.html">
+                        <img src="" alt="Bild på projekt 1">
+                        <h3>Projekt 1</h3>
+                        <p>Kort beskrivning av projekt 1.</p>
+                    </a>
+                </article>
+
+                <!-- Projektkort 2 -->
+                <article class="kort">
+                    <a href="projekt2.html">
+                        <img src="0" alt="Bild på projekt 2">
+                        <h3>Projekt 2</h3>
+                        <p>Kort beskrivning av projekt 2.</p>
+                    </a>
+                </article>
+
+                <!-- Projektkort 3 -->
+                <article class="kort">
+                    <a href="projekt3.html">
+                        <img src="" alt="Bild på projekt 3">
+                        <h3>Projekt 3</h3>
+                        <p>Kort beskrivning av projekt 3.</p>
+                    </a>
+                </article>
+
+                <!-- Projektkort 4 -->
+                <article class="kort">
+                    <a href="projekt4.html">
+                        <img src="" alt="Bild på projekt 4">
+                        <h3>Projekt 4</h3>
+                        <p>Kort beskrivning av projekt 4.</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <address>
+            <a href="mailto:robinlindstrand@gmail.com">robinlindstrand@gmail.com</a>
+        </address>
+        <ul class="sociala">
+            <li><a href="https://github.com/Bobbaann">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/robin-lindstrand-763664305/">LinkedIn</a></li>
+            
+        </ul>
+        <p>&copy; 2026 Robin Lindstrand</p>
+    </footer>
+
+</body>
+</html>
